@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: rgb(254, 254, 254);
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+  z-index: 10;
+}
+
+.search_sort {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw auto;
+}
+
+.search {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-width: 0;
+}
+
+.search input {
+  width: 30vw;
+  height: 2vw;
+  border-radius: 5px;
+}
+
+.sort {
+  width: 25%;
+  z-index: 20;
+}
+
+.filter {
+  width: 25%;
+}
+.accordion_filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_filter,
+.price_filter {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.accord {
+  display: flex;
+  justify-content: flex-end;
+}
