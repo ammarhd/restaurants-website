@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-
 import { useSelector, useDispatch } from "react-redux";
-import { fetchInfo } from "../../slices/details";
-import { addID, favoriteIDSelector } from "../../slices/favorites";
-
+import { fetchInfo } from "../../redux/slices/details";
+import { addID, favoriteIDSelector } from "../../redux/slices/favorites";
 import DetailsPopup from "../DetailsPopup";
 
 import "./main.css";
@@ -87,7 +85,7 @@ function Card(props) {
                 togglePopup(props.restaurant.id);
               }}
             >
-              More
+              view
             </Button>
           </div>
         </div>

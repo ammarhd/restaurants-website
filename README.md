@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Instructions on how to run your application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. CLONE THE PROJECT
 
-## Available Scripts
+2. NAVIGATE INTO A FOLDER CALLED frontend 2 through a terminal and run
 
-In the project directory, you can run:
+### docker-compose up --build
 
-### `yarn start`
+3. THE API WILL BE AVAILABLE AT http://localhost:3000
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Make sure ports 3000, 27017 are not being used by other processes on your computer
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+5. NAVIGATE INTO THE PROJECT AND RUN
 
-### `yarn test`
+### `npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. AFTER IT IS INSTALLED RUN
 
-### `yarn build`
+### `npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+######################
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# List of features completed
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. A view that displays the list of the restaurants
 
-### `yarn eject`
+2. A view that displays the list of the restaurants user saved and keep their IDs in the localStorage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. A popup window that display a detailed view of each restaurant with more information about that restaurant.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. A feature that lets the user sort the list of restaurants based on 4 relevant attributes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+5. A search bar that can search throw thr restaurants by any letters in the names
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+6. A feature which allows the user to filter out restaurants based on multiple relevant attributes.
 
-## Learn More
+7. the API was set using Docker
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+8. All fetched data have conditions to check if there is errors when loading or with server and display messege.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+9. All sort, filter functions have conditions for some objects properties upsent
 
-### Code Splitting
+# The Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The design is atempted to be user-centered by making it looks familier to other websites user has dealed with. It is simple and it has only two pages one for restaurans and the other for favorites. Also search, filters, and sort all at the top of the main page.. MoreOver, when user hover by the mouse over a restaurant they could see two buttons to add it to favorite or to view more details.
 
-### Analyzing the Bundle Size
+# Possible improvements and bugs & Other ideas and thoughts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. the design could of course improve more and need multiple opinions
 
-### Making a Progressive Web App
+2. also maybe other features could be included when having better idea about the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. i have some console bugs but without affecting the website which might be because of my browser plugins
 
-### Advanced Configuration
+4. maybe some functionlities could be written in a better way!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. More work to make the website fit perfictly on every screen size (now it is working good in most of the cases)

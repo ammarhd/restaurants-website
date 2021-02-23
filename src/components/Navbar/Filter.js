@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
@@ -9,7 +9,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 
 import { useDispatch } from "react-redux";
-import { getSelected } from "../../slices/checkboxes";
+import { getSelected } from "../../redux/slices/checkboxes";
 
 function Filter() {
   const [expanded, setExpanded] = React.useState(false);

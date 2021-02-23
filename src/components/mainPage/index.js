@@ -3,14 +3,9 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   fetchRestaurants,
   restaurantsSelector,
-} from "../../slices/restaurants";
-
-import { filtersSelector } from "../../slices/filters";
-import { checkboxesSelector } from "../../slices/checkboxes";
-
-import "./main.css";
-import Navbar from "../Navbar";
-
+} from "../../redux/slices/restaurants";
+import { filtersSelector } from "../../redux/slices/filters";
+import { checkboxesSelector } from "../../redux/slices/checkboxes";
 import { sortRestaurants } from "./sortHelper";
 import {
   getUnique,
@@ -18,6 +13,9 @@ import {
   filterList,
   filterListRate,
 } from "./filterHelper";
+
+import "./main.css";
+import Navbar from "../Navbar";
 import Card from "./Card";
 
 var checkboxFilters = [];
@@ -37,7 +35,6 @@ function Resturants() {
 
   useEffect(() => {
     setData(restaurants);
-    console.log(data);
   }, [restaurants]);
 
   // function to sort the resturants
@@ -52,7 +49,7 @@ function Resturants() {
     }
   }, [sort_filter]);
 
-  ///////// checkbox price 3
+  ///////// checkbox filters
   useEffect(() => {
     checkboxFilters = [];
 
@@ -122,13 +119,6 @@ function Resturants() {
     }
   }, [checked]);
 
-  ///////////////////
-
-  /// multiple filters function for
-
-  // error handling & map successful quary data
-
-  //console.log("restaurants : ", restaurants);
   return (
     <div>
       <div>

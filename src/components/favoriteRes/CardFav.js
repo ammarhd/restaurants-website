@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { restaurantsSelector } from "../../redux/slices/restaurants";
 import { removeID, favoriteIDSelector } from "../../redux/slices/favorites";
 import { fetchInfo } from "../../redux/slices/details";
 import "../mainPage/main.css";
@@ -13,7 +12,6 @@ import Button from "@material-ui/core/Button";
 function CardFav(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [theId, setTheId] = useState();
-  const { favoriteID } = useSelector(favoriteIDSelector);
   const dispatch = useDispatch();
 
   const togglePopup = (id) => {

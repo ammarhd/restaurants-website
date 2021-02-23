@@ -3,7 +3,7 @@ import "./popup.css";
 import Button from "@material-ui/core/Button";
 
 import { useSelector } from "react-redux";
-import { infoSelector } from "../../slices/details";
+import { infoSelector } from "../../redux/slices/details";
 
 import IconButton from "@material-ui/core/IconButton";
 import DirectionsIcon from "@material-ui/icons/Directions";
