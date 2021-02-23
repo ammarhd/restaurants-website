@@ -21,7 +21,7 @@ function Resturants() {
 
     return restaurants.map((restaurant) => (
       <div key={restaurant.id} className="title">
-        <h2>{restaurant.name.a}</h2>
+        <h2>{restaurant.name}</h2>
         <img src={restaurant.photo} alt="" />
       </div>
     ));
