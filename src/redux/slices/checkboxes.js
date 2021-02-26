@@ -28,5 +28,4 @@ export default checkboxesSlice.reducer;
 export const { getSelected } = checkboxesSlice.actions;
 
 // A selector
-//export const inputSelector = (state) => state.inputChange;
 export const checkboxesSelector = (state) => state.checkboxes;
