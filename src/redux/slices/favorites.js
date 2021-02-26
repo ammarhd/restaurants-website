@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// A slice for resturants with our three reducers
+
 const favoriteIDSlice = createSlice({
   name: "favoriteID",
   initialState: [],
