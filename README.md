@@ -48,10 +48,12 @@ The design is atempted to be user-centered by making it looks familier to other 
 
 1. the design could of course improve more and need multiple opinions
 
-2. also maybe other features could be included when having better idea about the project
+2. also maybe other features could be included when having better ideas about the project
 
-3. i have some console bugs but without affecting the website which might be because of my browser plugins
+3. I have some console bugs but without affecting the website which might be because of my browser plugins
 
 4. maybe some functionlities could be written in a better way!
 
 5. More work to make the website fit perfictly on every screen size (now it is working good in most of the cases)
+
+6. Introducing multiple shallow and unit tests.
