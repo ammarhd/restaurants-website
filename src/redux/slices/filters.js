@@ -5,7 +5,7 @@ export const initialState = {
   sort_filter: { value: "", label: "" },
 };
 
-// A slice for resturants with our three reducers
+
 const filtersSlice = createSlice({
   name: "filters",
   initialState,
@@ -29,5 +29,4 @@ export default filtersSlice.reducer;
 export const { getInput, getSort } = filtersSlice.actions;
 
 // A selector
-//export const inputSelector = (state) => state.inputChange;
 export const filtersSelector = (state) => state.filters;
