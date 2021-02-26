@@ -11,7 +11,7 @@ export const initialState = {
   },
 };
 
-// A slice for resturants with our three reducers
+
 const checkboxesSlice = createSlice({
   name: "checkboxes",
   initialState,
