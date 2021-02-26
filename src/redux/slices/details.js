@@ -4,7 +4,7 @@ export const initialState = {
   info: { opening_hours: [] },
 };
 
-// A slice for resturants with our three reducers
+
 const infoSlice = createSlice({
   name: "info",
   initialState,
