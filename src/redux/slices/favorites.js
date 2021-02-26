@@ -20,5 +20,4 @@ export default favoriteIDSlice.reducer;
 export const { addID, removeID } = favoriteIDSlice.actions;
 
 // A selector
-//export const inputSelector = (state) => state.inputChange;
 export const favoriteIDSelector = (state) => state;
